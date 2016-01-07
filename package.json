@@ -1,0 +1,15 @@
+{
+  "name": "raspberry-motion-alarm",
+  "version": "1.0.0",
+  "description": "Raspberry Pi Alarm with sensors",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edgar Pino <edgarbeltran@me.com>",
+  "license": "ISC",
+  "dependencies": {
+    "onoff": "^1.0.3",
+    "raspicam": "^0.2.13"
+  }
+}
