@@ -9,7 +9,7 @@ module.exports = function camera() {
 
     camera.takePicture = function() {
 
-        var path = 'files/images/',
+        var path = './files/images/',
             imageName = 'alert-' + Date.now() + '.jpg',
             options = ' -o ';
             command = PICCMD + options + path + imageName;
