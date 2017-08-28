@@ -4,10 +4,10 @@ var Twilio = require('twilio'),
 
 
 module.exports = function messenger() {
-
     var client = Twilio(accountSid,authToken),
         messenger = {};
 
+    // Function to send the text message via Twilio
     messenger.sendMessage = function sendMessage(message) {
         var body = message || 'Hello from Raspberry PI!';
         client.messages.create({
@@ -18,8 +18,5 @@ module.exports = function messenger() {
             console.log(message.sid);
         });
     };
-
-
     return messenger;
-
 }();

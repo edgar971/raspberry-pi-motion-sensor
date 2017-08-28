@@ -8,11 +8,11 @@ var GPIO = require('onoff').Gpio,
 
 
 
-
 module.exports = function sensor() {
 
     var sensor = new Emitter();
 
+    // Watch for any motion
     PIR.watch(function(err,status){
 
         if(!err && !!status) {
